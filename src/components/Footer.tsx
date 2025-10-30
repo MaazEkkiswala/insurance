@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 import {
   Facebook,
   Instagram,
@@ -9,7 +9,7 @@ import {
   Mail,
   Phone,
   MapPin,
-} from "lucide-react";
+} from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -122,8 +122,10 @@ const Footer = () => {
             </li>
             <li className="flex items-start space-x-2">
               <MapPin size={30} className="text-rose-500 mt-1" />
-              <span>shop no. 202, Om Complex, Near Purnima Dairy,
-                Mahavirnagar, Himmatnagar-383001.</span>
+              <span>
+                shop no. 202, Om Complex, Near Purnima Dairy, Mahavirnagar,
+                Himmatnagar-383001.
+              </span>
             </li>
           </ul>
         </motion.div>
@@ -132,7 +134,9 @@ const Footer = () => {
       {/* Divider */}
       <div className="border-t border-rose-100 mt-12 pt-6 text-center">
         <p className="text-gray-500 text-sm">
-          © {new Date().getFullYear()} <span className="font-semibold text-gray-800">NH Investment</span>. All rights reserved.
+          © {new Date().getFullYear()}{' '}
+          <span className="font-semibold text-gray-800">NH Investment</span>.
+          All rights reserved.
         </p>
       </div>
 

@@ -1,6 +1,8 @@
-import React from "react";
-import config from "../config/index.json";
-import { motion } from "framer-motion";
+import React from 'react';
+
+import { motion } from 'framer-motion';
+
+import config from '../config/index.json';
 
 const Services = () => {
   const { services } = config;
@@ -49,7 +51,7 @@ const Services = () => {
               {/* Description Badges */}
               <div className="flex flex-wrap gap-2">
                 {feature.description
-                  .split(",")
+                  .split(',')
                   .map((item: string, idx: number) => (
                     <span
                       key={idx}

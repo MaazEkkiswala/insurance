@@ -64,7 +64,6 @@ const Menu = () => {
                   {item.name}
                 </Link>
               ))}
-              
             </div>
           </nav>
         </div>

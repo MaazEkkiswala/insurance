@@ -1,20 +1,16 @@
 import React from 'react';
 
-
 import Analytics from '../components/Analytics';
 import Canvas from '../components/Canvas';
-
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import LazyShow from '../components/LazyShow';
 import MainHero from '../components/MainHero';
 import MainHeroImage from '../components/MainHeroImage';
-
-import Services from '../components/Services';
 import PartnersPage from '../components/PartnerPage';
 import About from '../components/Product';
+import Services from '../components/Services';
 import TestimonialsPage from '../components/testimonials';
-import Footer from '../components/Footer';
-
 
 const App = () => {
   return (
@@ -42,21 +38,20 @@ const App = () => {
           <Services />
           <Canvas />
         </>
-     
       </LazyShow>
       <LazyShow>
-        <PartnersPage/>
+        <PartnersPage />
       </LazyShow>
-      
+
       <LazyShow>
         <>
-        <TestimonialsPage/>
+          <TestimonialsPage />
           <Canvas />
         </>
       </LazyShow>
       <Analytics />
       <LazyShow>
-        <Footer/>
+        <Footer />
       </LazyShow>
     </div>
   );

@@ -1,26 +1,21 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 const mutualFundPartners = [
-  "sbi",
-  "hdfc",
-  "icici",
-  "franklin",
-  "aditya-birla",
-  "axis",
-  "bajaj",
-  "motilal-oswal",
-  "lic",
-  "tata",
+  'sbi',
+  'hdfc',
+  'icici',
+  'franklin',
+  'aditya-birla',
+  'axis',
+  'bajaj',
+  'motilal-oswal',
+  'lic',
+  'tata',
 ];
 
-const insurancePartners = [
-  "hdfc",
-  "aig",
-  "aditya-birla",
-  "motilal-oswal",
-];
+const insurancePartners = ['hdfc', 'aig', 'aditya-birla', 'motilal-oswal'];
 
 const PartnersPage = () => {
   return (

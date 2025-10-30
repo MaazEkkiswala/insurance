@@ -1,41 +1,44 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 const testimonials = [
   {
-    name: "Amit Sharma",
-    role: "Software Engineer",
+    name: 'Amit Sharma',
+    role: 'Software Engineer',
     message:
-      "I invested in mutual funds through this platform — the experience was smooth, transparent, and I got great support from their team.",
-    image: "/assets/testimonials/amit.jpg",
+      'I invested in mutual funds through this platform — the experience was smooth, transparent, and I got great support from their team.',
+    image: '/assets/testimonials/amit.jpg',
   },
   {
-    name: "Priya Desai",
-    role: "Entrepreneur",
+    name: 'Priya Desai',
+    role: 'Entrepreneur',
     message:
-      "Their insurance advisors helped me choose the perfect plan for my family. Really appreciate their clarity and service quality!",
-    image: "/assets/testimonials/sara.jpg",
+      'Their insurance advisors helped me choose the perfect plan for my family. Really appreciate their clarity and service quality!',
+    image: '/assets/testimonials/sara.jpg',
   },
   {
-    name: "Rahul Verma",
-    role: "Marketing Manager",
+    name: 'Rahul Verma',
+    role: 'Marketing Manager',
     message:
-      "I love how easy it is to manage all my investments in one place. The design and interface are beautiful and user-friendly.",
-    image: "/assets/testimonials/rahul.jpg",
+      'I love how easy it is to manage all my investments in one place. The design and interface are beautiful and user-friendly.',
+    image: '/assets/testimonials/rahul.jpg',
   },
   {
-    name: "Neha Gupta",
-    role: "Banking Professional",
+    name: 'Neha Gupta',
+    role: 'Banking Professional',
     message:
-      "Their financial insights are genuinely helpful. I’ve learned a lot and made better decisions with their recommendations.",
-    image: "/assets/testimonials/neha.jpg",
+      'Their financial insights are genuinely helpful. I’ve learned a lot and made better decisions with their recommendations.',
+    image: '/assets/testimonials/neha.jpg',
   },
 ];
 
 const TestimonialsPage = () => {
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-[#fff7f7] via-[#fffafa] to-white py-20 px-6" key={"testimonials"}>
+    <div
+      className="relative min-h-screen bg-gradient-to-b from-[#fff7f7] via-[#fffafa] to-white py-20 px-6"
+      key={'testimonials'}
+    >
       <div className="max-w-6xl mx-auto text-center">
         {/* Header */}
         <p className="text-sm uppercase tracking-widest text-rose-500 font-semibold mb-2">
