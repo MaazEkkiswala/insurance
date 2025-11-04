@@ -1,12 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { motion } from 'framer-motion';
 
 import config from '../config/index.json';
+import EnhancedServicePopup from './Popup';
 
 const Services = () => {
   const { services } = config;
   const { title, subtitle, description, items: featuresList } = services;
+
+  const [popup, setPopup] = useState<{
+    open: boolean;
+    label: string;
+    info: string;
+    siblings: any[];
+  }>({
+    open: false,
+    label: '',
+    info: '',
+    siblings: [],
+  });
+
+  const handleOpen = (item: any, allItems: any[]) => {
+    setPopup({
+      open: true,
+      label: item.label,
+      info: item.info,
+      siblings: allItems,
+    });
+  };
 
   return (
     <section id="services" className="py-20 bg-white">
@@ -26,9 +48,9 @@ const Services = () => {
 
         {/* Services Grid */}
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
-          {featuresList.map((feature, i) => (
+          {featuresList.map((feature: any, i: number) => (
             <motion.div
-              key={feature.name}
+              key={i}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
@@ -48,23 +70,33 @@ const Services = () => {
                 {feature.name}
               </h4>
 
-              {/* Description Badges */}
+              {/* Description Badge Click -> Open Popup */}
               <div className="flex flex-wrap gap-2">
-                {feature.description
-                  .split(',')
-                  .map((item: string, idx: number) => (
-                    <span
+                {feature.description.map(
+                  (item: { label: string; info: string }, idx: number) => (
+                    <button
                       key={idx}
+                      onClick={() => handleOpen(item, feature.description)}
                       className="px-3 py-1 bg-red-100 text-red-600 text-sm font-medium rounded-full hover:bg-red-200 transition-all"
                     >
-                      {item.trim()}
-                    </span>
-                  ))}
+                      {item.label}
+                    </button>
+                  )
+                )}
               </div>
             </motion.div>
           ))}
         </div>
       </div>
+
+      {/* Popup */}
+      <EnhancedServicePopup
+        open={popup.open}
+        title={popup.label}
+        info={popup.info}
+        siblings={popup.siblings}
+        onClose={() => setPopup((p) => ({ ...p, open: false }))}
+      />
     </section>
   );
 };

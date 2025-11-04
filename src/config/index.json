@@ -18,7 +18,7 @@
     "href": "#"
   },
   "mainHero": {
-    "title": "Insure today Secure tomorrow",
+    "title": "Insure today Secure tomorrow,",
     "subtitle": "Plans that protect, people that care.",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     "img": "/assets/images/life-insurance-concept-with-money.jpg",
@@ -31,6 +31,7 @@
       "href": "mailto:issaafakattan@gmail.com?subject=I like react landing page!"
     }
   },
+
   "about": {
     "title": "About Us",
     "items": [
@@ -46,28 +47,83 @@
       }
     ]
   },
+
   "services": {
-    "title": "Latest & greatest ",
+    "title": "Latest & greatest",
     "subtitle": "All the best technologies out there!",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "description": "It is a long established fact that a reader will be distracted...",
     "items": [
       {
-        "name": "Insurances",
-        "description": "Health Insurance, Vehicle Insurance, Commercial Insurance, Non-Motor Insurance, Life Insurance",
-        "icon": "/assets/images/insurance.png"
-      },
-      {
         "name": "Mutual Funds",
-        "description": "SIF, AIF, SIP, SWP, PMS",
+        "description": [
+          {
+            "label": "SIP",
+            "info": "A Systematic Investment Plan (SIP) is a disciplined method of investing in mutual funds at regular intervals—usually monthly. It enables investors to contribute small amounts rather than a lump sum, allowing for gradual wealth creation through the power of compounding. SIP benefits include rupee-cost averaging, flexibility to pause/adjust contributions, and suitability for long-term goals like retirement, education, and wealth accumulation. SIPs help avoid emotional market timing decisions, making them ideal for beginners as well as seasoned investors."
+          },
+          {
+            "label": "SIF",
+            "info": "SIF generally refers to investments made through Systematic Investment Facilities. The core idea is similar to SIPs, where contributions are made in small periodic intervals to diversified assets. SIFs support disciplined investment behavior and financial planning, reducing volatility risk over time. While SIPs are widely popular in mutual funds, SIFs can extend to other asset classes based on product structures."
+          },
+          {
+            "label": "AIF",
+            "info": "Alternative Investment Funds (AIFs) are privately pooled investments that invest in assets beyond standard stocks and bonds. Categories include hedge funds, private equity, venture capital, and structured credit products. AIFs have higher entry limits, making them suitable for high-net-worth individuals seeking higher returns with calculated risks. They follow flexible investment strategies and participate in unlisted companies, distressed debt, or specialized ventures—often offering diversification beyond traditional markets."
+          },
+          {
+            "label": "SWP",
+            "info": "A Systematic Withdrawal Plan (SWP) allows investors to withdraw a fixed amount periodically from their mutual fund investment. This creates consistent income without liquidating the entire investment at once. SWPs are ideal for retirement planning, offering predictable cash flows while allowing the remaining corpus to continue earning potential returns. Unlike traditional fixed income instruments, SWPs balance liquidity, growth, and tax efficiency."
+          },
+          {
+            "label": "PMS",
+            "info": "Portfolio Management Services (PMS) are tailored investment management offerings where professional fund managers design and manage portfolios according to investor goals, risk profiles, and time horizons. PMS investments usually involve higher minimum investment amounts and provide personalized strategies such as concentrated equity portfolios, theme-based investments, or dynamic allocations. PMS is suitable for investors seeking active management, superior research-backed decisions, and customized solutions."
+          }
+        ],
         "icon": "/assets/images/loan.png"
       },
+
       {
-        "name": "",
-        "description": "Demate Account, Post Office Fixed Deposit",
+        "name": "Insurances",
+        "description": [
+          {
+            "label": "Health Insurance",
+            "info": "Health Insurance provides financial protection against medical expenses arising from illnesses, injuries, and hospitalization. Policies cover room costs, surgeries, diagnostic tests, and sometimes preventive care. A good health plan helps safeguard savings and ensures access to quality healthcare. Many plans offer cashless services, critical illness coverage, maternity benefits, and annual health check-ups."
+          },
+          {
+            "label": "Vehicle Insurance",
+            "info": "Vehicle Insurance protects against financial losses arising from accidents, theft, natural calamities, and third-party liabilities. It is legally mandatory for all motor vehicles. Comprehensive plans offer extended coverage including damages to your own vehicle, personal accident benefits, and add-ons such as zero depreciation, roadside assistance, and engine protection."
+          },
+          {
+            "label": "Commercial Insurance",
+            "info": "Commercial Insurance safeguards businesses against risks like property damage, theft, liability claims, employee-related risks, and loss of income. It includes products such as fire insurance, machinery breakdown, business interruption, and professional indemnity. These policies ensure business continuity by mitigating unforeseen financial burdens."
+          },
+          {
+            "label": "Non-Motor Insurance",
+            "info": "Non-Motor Insurance provides coverage for valuable assets and risks outside the automotive sector. It includes home insurance, travel insurance, fire and burglary insurance, marine insurance, and crop insurance. These products help protect against natural disasters, theft, shipping losses, and other unexpected events."
+          },
+          {
+            "label": "Life Insurance",
+            "info": "Life Insurance offers financial security to dependents in unfortunate life events. Products include term plans, endowment plans, ULIPs, and retirement annuities. Term insurance ensures the highest coverage at affordable premiums, helping families maintain financial stability. Other life products combine protection with wealth creation to support future goals like education, marriage, or retirement."
+          }
+        ],
+        "icon": "/assets/images/insurance.png"
+      },
+
+      {
+        "name": "Other Financial Services",
+        "description": [
+          {
+            "label": "Demat Account",
+            "info": "A Demat (Dematerialized) Account is used to hold financial securities such as stocks, bonds, ETFs, and mutual funds in electronic form. It eliminates the need for physical certificates, reducing fraud, theft, and paperwork. Investors can seamlessly buy, sell, and transfer securities through trading platforms linked to a Demat account. It is a must-have for anyone interested in stock market participation."
+          },
+          {
+            "label": "Post Office Fixed Deposit",
+            "info": "Post Office Fixed Deposits are secure investment schemes backed by the Government of India, offering guaranteed returns at fixed interest rates. They come with flexible tenures and are popular for their safety and predictable earnings. Suitable for risk-averse investors, these deposits provide better security compared to many private-sector financial instruments, though returns are relatively modest."
+          }
+        ],
         "icon": "/assets/images/loan.png"
       }
     ]
   },
+
   "product": {
     "sections": [
       {
