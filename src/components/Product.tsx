@@ -60,7 +60,7 @@ export default function AboutUs() {
   ];
 
   return (
-    <div className="flex flex-col items-center w-full">
+    <div className="flex flex-col items-center w-full" id={'about'}>
       {/* Alternating sections */}
       {sections.map((item, index) => (
         <div
