@@ -21,6 +21,11 @@ const Footer = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
+          <img
+            alt="logo"
+            className="h-16 w-auto sm:h-16"
+            src={'/assets/PNG.png'}
+          />
           <h2 className="text-2xl font-extrabold text-gray-800 mb-3">
             NH Investment
           </h2>
