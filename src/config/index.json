@@ -17,6 +17,7 @@
     "text": "Get started",
     "href": "#"
   },
+
   "mainHero": {
     "title": "Insure today Secure tomorrow,",
     "subtitle": "Plans that protect, people that care.",
@@ -34,16 +35,51 @@
 
   "about": {
     "title": "About Us",
-    "items": [
+    "sections": [
       {
-        "title": "A plug n play template",
-        "description": "Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json",
-        "img": "/assets/images/investment.jpg"
+        "title": "Welcome to N H Investment",
+        "description": "Welcome to N H Investment, your trusted partner on the path to financial growth and security.\n\nMy name is Hardik Patel, founder of N H Investment. I started this journey in 2017 with a vision to guide individuals and families in making informed financial decisions. With years of experience in the investment advisory space, I have helped a wide range of clients plan, protect, and grow their wealth through disciplined and well-researched financial strategies.\n\nAt N H Investment, we believe that wealth creation is not just about money — it is about achieving milestones, securing your family’s future, and fulfilling your dreams.",
+        "img": "/assets/about/About_1.jpeg"
       },
       {
-        "title": "Make it your own!",
-        "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
-        "img": "/assets/images/investment-2.jpg"
+        "title": "Who We Are",
+        "description": "N H Investment is a dedicated financial advisory service specializing in Mutual Funds, Insurance Planning, and Investment Education.\n\n✅ AMFI-Registered Mutual Fund Distributor\n✅ IRDA-Approved Insurance Advisor\n\nThese certifications enable me to serve clients with authentic products, regulated guidance, and long-term accountability.",
+        "img": "/assets/about/About_2.jpeg"
+      },
+      {
+        "title": "Our Growth Journey",
+        "description": "What began in 2017 has today evolved into a trusted financial service brand. We currently serve 1,500+ clients and aim to reach 3,000+ by 2027.",
+        "img": "/assets/about/About_3.jpeg"
+      },
+      {
+        "title": "What We Do",
+        "description": "✅ Mutual Fund Distribution\n✅ Insurance Advisory\n✅ Investment Awareness\n\nWe help clients understand market trends and make informed decisions.",
+        "img": "/assets/about/About_4.jpeg"
+      },
+      {
+        "title": "Our Values",
+        "description": "🔹 Trust & Transparency\n🔹 Client-Centric Approach\n🔹 Ethical Advisory\n🔹 Long-Term Partnership",
+        "img": ""
+      },
+      {
+        "title": "Achievements",
+        "description": "🏆 Gold Club Advisor – HDFC Ergo Health Insurance (2023 & 2024)",
+        "img": "/assets/about/About_6.jpeg"
+      },
+      {
+        "title": "Technology & Platform",
+        "description": "We use authorized and trusted NSE platforms ensuring secure, reliable transactions.",
+        "img": "/assets/about/About_7.jpeg"
+      },
+      {
+        "title": "Why Choose Us?",
+        "description": "✅ Certified advisory\n✅ Personalized planning\n✅ Secure processes\n✅ Long-term guidance\n✅ Investor education",
+        "img": ""
+      },
+      {
+        "title": "Our Vision & Mission",
+        "description": "Vision – To empower individuals through financial literacy.\nMission – Serve 3,000+ clients by 2027.",
+        "img": ""
       }
     ]
   },
@@ -79,7 +115,6 @@
         ],
         "icon": "/assets/images/loan.png"
       },
-
       {
         "name": "Insurances",
         "description": [
@@ -106,7 +141,6 @@
         ],
         "icon": "/assets/images/insurance.png"
       },
-
       {
         "name": "Other Financial Services",
         "description": [
