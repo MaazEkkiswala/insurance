@@ -29,33 +29,21 @@ export default function AboutUs() {
     },
   ];
 
-  const highlights = [
+  const highlightCards = [
     {
       title: 'Our Values',
-      points: [
-        'Trust & Transparency',
-        'Client-Centric Approach',
-        'Ethical Advisory',
-        'Long-Term Partnership',
-      ],
+      paragraph:
+        'Our foundation is built on unwavering trust, complete transparency, and strong ethical values. We believe that every client relationship begins with integrity and honest communication. Our advisory approach is centered around understanding each individual’s financial goals and offering solutions that truly serve their long-term interests. We aim to create a supportive environment where clients feel confident, informed, and empowered to make the right financial decisions.',
     },
     {
       title: 'Why Choose Us',
-      points: [
-        'Personalized Financial Strategy',
-        'Trusted By 1500+ Clients',
-        '7+ Years Experience',
-        'Goal-Driven Advice',
-      ],
+      paragraph:
+        'With over seven years of experience and the trust of more than 1500 clients, we bring both expertise and personalized attention to every financial plan. Our strategies are tailored specifically to your needs, ensuring that your investments align with your risk appetite, goals, and future aspirations. Clients choose us because we stay committed even after the investment is made — monitoring, guiding, and supporting them at every step. Our mission is not just to manage money, but to build lasting financial security and growth for every individual.',
     },
     {
       title: 'Vision & Mission',
-      points: [
-        'Empowering families financially',
-        'Helping 3000+ clients by 2027',
-        'Building long-term relationships',
-        'Improving financial literacy',
-      ],
+      paragraph:
+        'Our vision is to empower families and individuals by helping them achieve financial stability, clarity, and long-term growth. We aim to reach and positively impact over 3000 clients by 2027, spreading awareness about smart investments and financial literacy. Our mission is to simplify finance for everyone — making it easier to understand, easier to manage, and easier to grow. By offering transparent guidance and consistent support, we strive to build lifelong relationships rooted in trust, knowledge, and shared success.',
     },
   ];
 
@@ -85,21 +73,33 @@ export default function AboutUs() {
       ))}
 
       {/* Highlights */}
-      <div className="w-full max-w-6xl px-6 md:px-10 py-20 text-center">
-        <h2 className="text-4xl font-bold mb-12">🌟 Highlights</h2>
+      <div className="w-full max-w-7xl px-6 md:px-10 py-20 text-center">
+        <h2 className="text-4xl font-bold mb-12 text-primary drop-shadow-sm">
+          🌟 Highlights
+        </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {highlights.map((h, i) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          {highlightCards.map((card, idx) => (
             <div
-              key={i}
-              className="p-8 shadow-lg rounded-2xl border hover:shadow-xl transition"
+              key={idx}
+              className="
+                p-8 rounded-2xl border 
+                bg-white/60 backdrop-blur-lg
+                shadow-lg hover:shadow-2xl 
+                hover:-translate-y-3 transition-all duration-500
+                border-primary/20 hover:border-primary/40
+                hover:bg-white/80 cursor-pointer
+              "
             >
-              <h3 className="text-2xl font-semibold mb-4">{h.title}</h3>
-              <ul className="space-y-2 text-gray-700">
-                {h.points.map((p, i2) => (
-                  <li key={i2}>• {p}</li>
-                ))}
-              </ul>
+              <h3 className="text-2xl font-semibold mb-4 text-primary tracking-wide">
+                {card.title}
+              </h3>
+
+              <p className="text-gray-700 leading-relaxed text-justify">
+                {card.paragraph}
+              </p>
+
+              <div className="mt-6 h-1 w-16 mx-auto bg-primary/60 rounded-full"></div>
             </div>
           ))}
         </div>

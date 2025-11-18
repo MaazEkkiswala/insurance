@@ -3,19 +3,25 @@
 import { motion } from 'framer-motion';
 
 const mutualFundPartners = [
-  'sbi',
-  'hdfc',
-  'icici',
-  'franklin',
-  'aditya-birla',
-  'axis',
-  'bajaj',
-  'motilal-oswal',
-  'lic',
-  'tata',
+  'AdityaBirlaCapital',
+  'AxisMutualFunds',
+  'BandhanMutualFunds',
+  'HdfcMutualFunds',
+  'IcicMutualFunds',
+  'LicMutualFunds',
+  'MotilalOswal',
+  'TataAIG',
+  'TataMutualFunds',
 ];
 
-const insurancePartners = ['hdfc', 'aig', 'aditya-birla', 'motilal-oswal'];
+const insurancePartners = [
+  'AdityaBirla',
+  'DigitInsurance',
+  'HdfcErgo',
+  'NivaHealthInsurance',
+  'SBIFunds',
+  'StarHealth',
+];
 
 const PartnersPage = () => {
   return (
@@ -44,15 +50,21 @@ const PartnersPage = () => {
             {mutualFundPartners.map((partner, index) => (
               <motion.div
                 key={partner}
-                className="bg-white rounded-2xl p-6 shadow-[0_3px_10px_rgb(0,0,0,0.05)] hover:shadow-[0_5px_20px_rgb(255,110,110,0.25)] transition-all duration-300 flex items-center justify-center"
+                className="group rounded-2xl p-6 
+                          bg-gradient-to-br from-[#f8c6cf] to-[#f7b4be]
+                          shadow-[0_5px_15px_rgba(0,0,0,0.08)]
+                          hover:shadow-[0_15px_25px_rgba(255,135,135,0.40)]
+                          hover:-translate-y-2 
+                          transition-all duration-300 flex items-center justify-center"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.05, duration: 0.4 }}
               >
                 <img
-                  src={`/assets/partners/mutual/${partner}.svg`}
+                  src={`/assets/partners/mutual/${partner}.png`}
                   alt={partner}
-                  className="max-h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  className="max-h-50 w-auto object-contain transition-all duration-300 
+                            group-hover:scale-110 group-hover:opacity-100"
                 />
               </motion.div>
             ))}
@@ -70,15 +82,21 @@ const PartnersPage = () => {
             {insurancePartners.map((partner, index) => (
               <motion.div
                 key={partner}
-                className="bg-white rounded-2xl p-6 shadow-[0_3px_10px_rgb(0,0,0,0.05)] hover:shadow-[0_5px_20px_rgb(255,110,110,0.25)] transition-all duration-300 flex items-center justify-center"
+                className="group rounded-2xl p-6 
+                          bg-gradient-to-br from-[#f8c6cf] to-[#f7b4be]
+                          shadow-[0_5px_15px_rgba(0,0,0,0.08)]
+                          hover:shadow-[0_15px_25px_rgba(255,135,135,0.40)]
+                          hover:-translate-y-2 
+                          transition-all duration-300 flex items-center justify-center"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.05, duration: 0.4 }}
               >
                 <img
-                  src={`/assets/partners/insurance/${partner}.svg`}
+                  src={`/assets/partners/insurance/${partner}.png`}
                   alt={partner}
-                  className="max-h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  className="max-h-50 w-auto object-contain transition-all duration-300 
+                            group-hover:scale-110 group-hover:opacity-100"
                 />
               </motion.div>
             ))}

@@ -23,7 +23,7 @@ const Footer = () => {
         >
           <img
             alt="logo"
-            className="h-16 w-auto sm:h-16"
+            className="h-[100px] w-auto sm:h-[110px]"
             src={'/assets/PNG.png'}
           />
           <h2 className="text-2xl font-extrabold text-gray-800 mb-3">

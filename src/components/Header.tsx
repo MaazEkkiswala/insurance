@@ -39,8 +39,8 @@ const Menu = () => {
                   <span className="sr-only">{'NH Investment'}</span>
                   <img
                     alt="logo"
-                    className="h-16 w-auto sm:h-16"
-                    src={'/assets/PNG.png'}
+                    className="mt-7 h-[100px] w-auto sm:h-[110px]"
+                    src="/assets/PNG.png"
                   />
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">

@@ -29,6 +29,25 @@
     }
   },
 
+  "mainHeroSlides": [
+    {
+      "title": "Insure today Secure tomorrow",
+      "subtitle": "Plans that protect",
+      "description": "It is a long established fact that a reader...",
+      "img": "/assets/investment.jpg",
+      "primaryAction": { "text": "Whatsapp", "href": "#" },
+      "secondaryAction": { "text": "Email us", "href": "#" }
+    },
+    {
+      "title": "Protect Your Family",
+      "subtitle": "Insurance that cares",
+      "description": "Secure your family's future with trusted plans...",
+      "img": "/assets/investment-2.jpg",
+      "primaryAction": { "text": "Whatsapp", "href": "#" },
+      "secondaryAction": { "text": "Email Us", "href": "#" }
+    }
+  ],
+
   "about": {
     "title": "About Us",
     "sections": [
