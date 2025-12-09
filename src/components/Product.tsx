@@ -3,7 +3,7 @@ export default function AboutUs() {
     {
       title: 'Welcome to N H Investment',
       text: `Welcome to N H Investment, your trusted partner on the path to financial growth and security.\n\nMy name is Hardik Patel, founder of N H Investment. I started this journey in 2017 with a vision to guide individuals and families in making informed financial decisions. With years of experience in the investment advisory space, I have helped a wide range of clients plan, protect, and grow their wealth through disciplined and well-researched financial strategies.\n\nAt N H Investment, we believe that wealth creation is not just about money — it is about achieving milestones, securing your family’s future, and fulfilling your dreams.`,
-      image: '/assets/about/About_1.jpeg',
+      image: '/assets/about/About1.jpeg',
     },
     {
       title: 'Who We Are',
@@ -25,7 +25,7 @@ export default function AboutUs() {
     {
       title: 'Achievements',
       text: `🏆 Gold Club Advisor – HDFC Ergo Health Insurance (2023 & 2024)`,
-      image: '/assets/about/About_6.jpeg',
+      image: '/assets/about/About1.jpeg',
     },
   ];
 

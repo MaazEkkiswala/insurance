@@ -9,8 +9,8 @@ const mutualFundPartners = [
   'HdfcMutualFunds',
   'IcicMutualFunds',
   'LicMutualFunds',
+  'SBIFunds',
   'MotilalOswal',
-  'TataAIG',
   'TataMutualFunds',
 ];
 
@@ -19,7 +19,7 @@ const insurancePartners = [
   'DigitInsurance',
   'HdfcErgo',
   'NivaHealthInsurance',
-  'SBIFunds',
+  'TataAIG',
   'StarHealth',
 ];
 
